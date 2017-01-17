@@ -1,7 +1,7 @@
 ---
 title: About
 date: 2017-01-16 19:20:00 Z
-layout: page
+layout: post
 ---
 
 The about page
