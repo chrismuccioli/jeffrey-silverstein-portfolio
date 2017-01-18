@@ -5,8 +5,7 @@ categories:
 - noise
 - music
 tags:
-- noise
-- music
+- stereogum
 layout: post
 ---
 
