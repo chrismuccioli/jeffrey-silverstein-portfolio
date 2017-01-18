@@ -5,6 +5,7 @@ categories:
 - noise
 tags:
 - noise
+- other
 layout: page
 ---
 
