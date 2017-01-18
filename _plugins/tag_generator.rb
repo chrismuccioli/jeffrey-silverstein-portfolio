@@ -35,7 +35,8 @@ module Jekyll
 
     def generate(site)
       if site.layouts.has_key? 'tag_page'
-        dir = site.config['tag_page_dir'] || 'tag'
+        #  The line below defines the base folder name, here 'publication'
+        dir = site.config['tag_page_dir'] || 'publication'
         site.tags.keys.each do |tag|
           write_tag_page(site, File.join(dir, tag), tag)
         end

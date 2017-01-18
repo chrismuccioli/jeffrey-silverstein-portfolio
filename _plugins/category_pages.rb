@@ -29,7 +29,7 @@ module Jekyll
     safe true
 
     def generate(site)
-      dir = site.config['category_dir'] || 'categories'
+      dir = site.config['category_dir'] || 'writing'
       if site.layouts.key? 'category_index'
         site.categories.each_key do |category|
           newpage = CategoryPage.new(site, site.source, File.join(dir, category), category)
