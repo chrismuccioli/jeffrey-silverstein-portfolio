@@ -7,5 +7,6 @@ categories:
 tags:
 - noise
 - music
+layout: post
 ---
 
