@@ -18,7 +18,14 @@ layout: default
     {% endfor %}
   </ul>
 
-  {{ site | tag_cloud }}
+        {% for my_page in site.pages %}
+            {% if my_page.title %}
+              <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            {% endif %}
+        {% endfor %}
+
+
+<h2>{{ site.tags | sort | join: ", " }}</h2>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
