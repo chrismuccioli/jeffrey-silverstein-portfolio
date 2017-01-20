@@ -2,38 +2,9 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-<!--
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %} -->
-
-<!-- <uL>
-{% for my_page in site.pages %}
-  {% for tag in page.tags %}
-    {% if tag == "stereogum" %}
-    <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-</ul> -->
+<div class="sidebar-nav">
+  <h1>Header</h1>
+</div>
 
 {% for tags in site.tags %}
     <a href="/publication/{{ tags | first }}/">{{ tags | first }}</a>
@@ -45,7 +16,3 @@ layout: default
     <a  href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.category }}</a>
   {% endif %}
 {% endfor %}
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
