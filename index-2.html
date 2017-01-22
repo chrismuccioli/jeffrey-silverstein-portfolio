@@ -1,0 +1,17 @@
+---
+layout: default
+categories: Interview
+---
+
+  <ul>
+    {% for post in site.categories[page.categories] %}
+      {% if post.url %}
+          <li>
+            <img src="{{ post.thumbnail-image }}">
+            <h2 class="category">{{ post.categories }}</h2>
+            <a class="title" href="{{ post.external-url }} / {{ post.url }}">{{ post.title }}</a>
+            <h2 class="publication">{{ post.tags }}</h2>
+          </li>
+      {% endif %}
+    {% endfor %}
+  </ul>

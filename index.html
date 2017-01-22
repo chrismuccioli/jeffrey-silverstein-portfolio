@@ -1,6 +1,6 @@
 ---
 layout: default
-categories:
+categories: Interview
 ---
 
 <div class="sidebar-nav">
@@ -44,22 +44,19 @@ categories:
   <div class="page-title">
   {{ page.categories }}
   </div>
-  {% for category in site.categories %}
     <div class="article-index">
-      <!-- <li><a name="{{ category | first }}">{{ category | first }}</a> -->
         <ul>
-        {% for posts in category %}
-          {% for post in posts %}
-            <li>
+    {% for post in site.categories[page.categories] %}
+      {% if post.url %}
+          <li>
             <img src="{{ post.thumbnail-image }}">
             <h2 class="category">{{ post.categories }}</h2>
             <a class="title" href="{{ post.external-url }} / {{ post.url }}">{{ post.title }}</a>
             <h2 class="publication">{{ post.tags }}</h2>
-            </li>
-          {% endfor %}
-        {% endfor %}
+          </li>
+      {% endif %}
+    {% endfor %}
         </ul>
-      <!-- </li> -->
+
     </div>
-  {% endfor %}
   </div>
