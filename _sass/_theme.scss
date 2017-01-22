@@ -58,17 +58,17 @@ a {
   ul {
    list-style: none;
   }
-  // li {
-  //   width: 500px;
-  //   display: -moz-inline-stack;
-  //   display: inline-block;
-  //   vertical-align: top;
-  //   border: black solid 1px;
-  //   *display: inline;
-  // }
-  // li:empty {
-  //   display: none;
-  // }
+  li {
+    width: 500px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    border: black solid 1px;
+    *display: inline;
+  }
+  li:empty {
+    display: none;
+  }
   img {
     max-width: 130px;
   }
