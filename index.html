@@ -1,7 +1,7 @@
 ---
 layout: default
+categories: featured
 ---
-
 <div class="sidebar-nav">
   <div class="sidebar-header">
     <div class="col-left">
@@ -37,25 +37,29 @@ layout: default
     {% endfor %}
   </div>
 </div>
-<div class="content">
 
-<ul>
-    {% for post in site.categories.[page.categories] %}
-      {% if post.url %}
+
+<div class="content">
+  <div class="page-title">
+  {{ page.categories }}
+  </div>
+{% for category in site.categories %}
+  <div class="article-index">
+    <!-- <li><a name="{{ category | first }}">{{ category | first }}</a> -->
+      <ul>
+      {% for posts in category %}
+        {% for post in posts %}
           <li>
-              {{ post.excerpt }}
-          <div class="title">
-          <h3 class="caps">{{ post.title }}</h3>
-          <div class="credits gray">
-            <h4>{{ post.credits }}</h4>
-          </div>
-          </div>
-          <div class="roles gray">
-            <h5>{{ post.roles }}</h5>
-          </div>
+          <img src="{{ post.thumbnail-image }}">
+          <div class="category">{{ post.categories }}</h2>
+          <a class="title" href="{{ post.external-url }} / {{ post.url }}">{{ post.title }}</a>
+          <h2 class="publication">{{ post.tags }}</h2>
           </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+        {% endfor %}
+      {% endfor %}
+      </ul>
+    <!-- </li> -->
+  </div>
+{% endfor %}
 
 </div>

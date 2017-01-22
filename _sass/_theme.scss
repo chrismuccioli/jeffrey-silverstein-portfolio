@@ -1,7 +1,16 @@
+$serif-family: 'Quattrocento', serif;
+
+
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .sidebar-nav {
-  width: 25%;
+  width: 500px;
   height: 100%;
-  background-color: #ff0022;
+  background-color: #FBEEE5;
   z-index: 100;
   position: fixed;
   padding: 2rem;
@@ -16,13 +25,50 @@
   }
 }
 
-.content {
-  height: 100vh;
-  padding-left: 35%;
-  background-color: #000000;
+.page-title {
+  color: #ffffff;
+  -webkit-transform:rotate(-90deg);
+  -moz-transform:rotate(-90deg);
+  -o-transform:rotate(-90deg);
+  transform:rotate(-90deg);
+  ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  float: left;
+  position: fixed;
+  margin-top: 50px;
+  font-size: 24px;
+  font-family: $serif-family;
 }
 
+.content {
+  height: 100%;
+  background-color: #ff0022;
+  padding-left: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .sidebar-bio {
   font-size: 16px;
   line-height: 22px;
+}
+
+.article-index {
+  padding-right: 10%;
+  padding-left: 10%;
+  ul {
+   list-style: none;
+  }
+  img {
+    max-width: 130px;
+  }
+  & .title {
+    font-size: 32px;
+    font-family: $serif-family;
+  }
+  & .publication {
+    font-size: 16px;
+  }
+  & .category {
+    font-size: 12px;
+  }
 }
