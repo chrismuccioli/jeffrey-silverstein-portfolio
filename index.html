@@ -1,6 +1,7 @@
 ---
 layout: default
-categories: featured
+categories:
+  - interview
 ---
 
 <div class="sidebar-nav">
@@ -44,23 +45,22 @@ categories: featured
   <div class="page-title">
   {{ page.categories }}
   </div>
-{% for category in site.categories %}
-  <div class="article-index">
-    <!-- <li><a name="{{ category | first }}">{{ category | first }}</a> -->
-      <ul>
-      {% for posts in category %}
-        {% for post in posts %}
-          <li>
-          <img src="{{ post.thumbnail-image }}">
-          <div class="category">{{ post.categories }}</h2>
-          <a class="title" href="{{ post.external-url }} / {{ post.url }}">{{ post.title }}</a>
-          <h2 class="publication">{{ post.tags }}</h2>
-          </li>
+  {% for category in site.categories %}
+    <div class="article-index">
+      <!-- <li><a name="{{ category | first }}">{{ category | first }}</a> -->
+        <ul>
+        {% for posts in category %}
+          {% for post in posts %}
+            <li>
+            <img src="{{ post.thumbnail-image }}">
+            <h2 class="category">{{ post.categories }}</h2>
+            <a class="title" href="{{ post.external-url }} / {{ post.url }}">{{ post.title }}</a>
+            <h2 class="publication">{{ post.tags }}</h2>
+            </li>
+          {% endfor %}
         {% endfor %}
-      {% endfor %}
-      </ul>
-    <!-- </li> -->
+        </ul>
+      <!-- </li> -->
+    </div>
+  {% endfor %}
   </div>
-{% endfor %}
-
-</div>
