@@ -1,5 +1,23 @@
-$serif-family: 'Quattrocento', serif;
+@import "variables";
 
+$serif-family: 'Quattrocento', serif;
+$sans-serif-family: 'Open Sans', sans-serif;
+$sans-cond-family: 'Open Sans Condensed', sans-serif;
+
+@mixin serif {
+  font-family: $serif-family;
+  font-weight: 700;
+}
+
+@mixin sans-serif {
+  font-family: $sans-serif-family;
+  font-weight: 400;
+}
+
+@mixin sans-cond {
+  font-family: $sans-cond-family;
+  font-weight: 700;
+}
 
 
 a {
@@ -8,7 +26,8 @@ a {
 }
 
 .sidebar-nav {
-  width: 500px;
+  width: 30%;
+  max-width: 500px;
   height: 100%;
   background-color: #FBEEE5;
   z-index: 100;
@@ -35,15 +54,17 @@ a {
   filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   float: left;
   position: fixed;
+  margin-left: 32%;
   margin-top: 50px;
+  max-padding: 500px;
   font-size: 24px;
-  font-family: $serif-family;
+  @include serif;
 }
 
 .content {
   height: 100%;
   background-color: #ff0022;
-  padding-left: 600px;
+  padding-left: 25%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -52,18 +73,26 @@ a {
   line-height: 22px;
 }
 
+
+.article-index-home {
+  li {
+    width: 500px;
+  }
+}
+
 .article-index {
-  padding-right: 10%;
-  padding-left: 10%;
   ul {
    list-style: none;
   }
   li {
-    width: 500px;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 20%;
     display: -moz-inline-stack;
     display: inline-block;
     vertical-align: top;
-    border: black solid 1px;
+    border-bottom: black solid 1px;
     *display: inline;
   }
   li:empty {
@@ -78,8 +107,45 @@ a {
   }
   & .publication {
     font-size: 16px;
+    @include sans-cond;
   }
   & .category {
     font-size: 12px;
+    @include sans-cond;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  .page-title {
+    margin-left: 27%;
+  }
+  .content {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (max-width: $breakpoint-md) {
+  .page-title {
+    margin-left: 37%;
+  }
+  .article-index {
+    li {
+      padding-left: 40%;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .sidebar-nav {
+    display: none;
+  }
+  .content {
+    padding-left: 0;
+  }
+  .article-index {
+    li, ul {
+      padding-left: 0;
+    }
   }
 }

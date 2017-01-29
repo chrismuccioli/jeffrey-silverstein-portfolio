@@ -4,6 +4,9 @@ categories: Interview
 ---
 
 <div class="sidebar-nav">
+          <div class="page-title">
+  {{ page.categories }}
+  </div>
   <div class="sidebar-header">
     <div class="col-left">
       <h1>Jeffrey Silverstein</h1>
@@ -41,9 +44,7 @@ categories: Interview
 
 
 <div class="content">
-  <div class="page-title">
-  {{ page.categories }}
-  </div>
+
     <div class="article-index">
         <ul>
     {% for post in site.categories[page.categories] %}
