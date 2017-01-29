@@ -34,6 +34,11 @@ html {
   letter-spacing: .3em;
 }
 
+@mixin no-select {
+  user-select: none;
+  cursor: default;
+}
+
 @mixin h1 {
   font-size: 32px;
   letter-spacing: 0.05em;
@@ -167,6 +172,7 @@ a {
     white-space: nowrap;
     direction: rtl;
     text-indent: 58px;
+    @include no-select;
   }
 }
 
@@ -242,21 +248,35 @@ a {
 //Styling for archived Posts
 .archived-post {
   padding-right: $space*5;
+  padding-top: $space*5;
+
   .article-title {
     @include h1;
+    padding-bottom: $space*1;
+  }
+  .category {
+    padding-bottom: $space*1;
+    a {
+      color: $peach;
+      }
   }
   .source {
     @include h4;
     color: $gray;
     @include sans-serif;
+    font-style: italic;
+    padding-bottom: $space*3;
   }
   p {
-    padding-bottom: $space*1;
+    padding-bottom: $space*3;
     @include h2;
   }
   img {
     width: 100%;
-    border: solid 3px;
+    border: solid 6px;
+    margin-bottom: $space*3;
+  }
+  iframe {
     margin-bottom: $space*3;
   }
 }
