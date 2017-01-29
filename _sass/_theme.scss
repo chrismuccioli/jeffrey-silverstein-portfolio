@@ -217,3 +217,18 @@ a {
     @include title-case;
   }
 }
+
+//Styling for Default Posts
+
+.default-content-container {
+  width: 70%;
+  float: left;
+}
+
+.default-content {
+  img {
+    width: 100% !important;
+  }
+  p {
+  }
+}
