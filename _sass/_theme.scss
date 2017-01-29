@@ -1,8 +1,12 @@
-@import "variables";
-
 $serif-family: 'Quattrocento', serif;
 $sans-serif-family: 'Open Sans', sans-serif;
 $sans-cond-family: 'Open Sans Condensed', sans-serif;
+$blue: #DEEEFF;
+$peach: #FED5B8;
+$pink: #F7B5E0;
+$gray: #B9AEBC;
+$black: #28271F;
+$space: 10px;
 
 @mixin serif {
   font-family: $serif-family;
@@ -19,9 +23,78 @@ $sans-cond-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
 }
 
+html {
+  @include serif;
+  text-rendering: optimizeLegibility;
+  color: $black;
+}
+
+@mixin title-case {
+  text-transform: uppercase;
+  letter-spacing: .3em;
+}
+
+@mixin h1 {
+  font-size: 32px;
+  letter-spacing: 0.05em;
+  line-height: 36px;
+}
+
+h1, .h1 { @include h1; }
+
+@mixin h2 {
+  font-size: 23px;
+  letter-spacing: 0em;
+  line-height: 32px;
+}
+
+h2, .h2 { @include h2; }
+
+@mixin h3 {
+  font-size: 18px;
+  letter-spacing: 0em;
+  line-height: 22px;
+}
+
+h3, .h3 { @include h3; }
+
+@mixin h4 {
+  font-size: 16px;
+  letter-spacing: 0em;
+  line-height: 22px;
+}
+
+h4, .h4 { @include h4; }
+
+@mixin h5 {
+  font-size: 12px;
+  letter-spacing: 0em;
+  line-height: 14px;
+}
+
+h5, .h5 { @include h5; }
+
+@mixin h6 {
+  font-size: 8px;
+  letter-spacing: 0em;
+  line-height: 10px;
+}
+
+h6, .h6 { @include h6; }
+
 a {
   text-decoration: none;
   color: #000000;
+}
+
+@mixin navlink {
+  a {
+    border-bottom: solid black 2px;
+  }
+  a:hover {
+    color: $pink;
+    border-bottom: solid $pink 2px;
+  }
 }
 
 .container {
@@ -39,24 +112,40 @@ a {
 .side-nav-container {
   position: fixed;
   .side-nav {
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-top: $space*5;
+    padding-left: $space*5;
+    padding-right: $space*5;
       & .col-left {
-    float: left;
+        float: left;
+        @include h1;
+      }
+      & .col-right {
+        text-align: right;
+      ul {
+        @include navlink;
+        @include h4;
+        line-height: 1.5em;
+        list-style: none;
+      }
   }
-  & .col-right {
-    text-align: right;
-    ul {
-      list-style: none;
-    }
+  .sidebar-header {
+    padding-bottom: $space*4;
   }
   .bio {
-    font-size: 16px;
-    line-height: 22px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    @include h4;
+    padding-bottom: $space*2;
   }
+    .title {
+      @include h5;
+      @include title-case;
+      @include sans-cond;
+      padding-bottom: $space*1;
+    }
+    .publications, .type {
+      @include h4;
+      @include sans-serif;
+      padding-bottom: $space*3;
+    }
   }
 }
 
@@ -71,20 +160,19 @@ a {
     transform:rotate(-90deg);
     ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
     filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-    @include serif;
+    @include h2;
     margin-top: 70px;
+    color: $peach;
   }
 }
 
 .page-content-container {
-   background-color: yellow;
    width: 60%;
    float: left;
 }
 
-
 .article-index {
-  padding-top: 50px;
+  padding-top: $space*5;
   ul {
    list-style: none;
    padding-left: 0;
@@ -94,57 +182,34 @@ a {
     display: -moz-inline-stack;
     display: inline-block;
     vertical-align: top;
-    border-bottom: black solid 1px;
+    border-bottom: $blue solid 1px;
+    padding-top: $space*3;
+    padding-bottom: $space*3;
     *display: inline;
   }
   img {
     max-width: 130px;
+    margin-bottom: $space*3;
+    border: 3px solid;
   }
   & .title {
     font-size: 32px;
     font-family: $serif-family;
+    @include h1;
   }
   & .publication {
     font-size: 16px;
     @include sans-cond;
+    padding-top: $space*1;
+    @include h4;
   }
   & .category {
     font-size: 12px;
+    padding-bottom: $space*1;
     @include sans-cond;
     text-transform: uppercase;
+    color: $peach;
+    @include h5;
+    @include title-case;
   }
 }
-
-// @media screen and (min-width: $breakpoint-lg) {
-//   .page-title {
-//     margin-left: 27%;
-//   }
-//   .content {
-//     padding-left: 20%;
-//   }
-// }
-
-// @media screen and (max-width: $breakpoint-md) {
-//   .page-title {
-//     margin-left: 37%;
-//   }
-//   .article-index {
-//     li {
-//       padding-left: 40%;
-//     }
-//   }
-// }
-
-// @media screen and (max-width: $breakpoint-sm) {
-//   .sidebar-nav {
-//     display: none;
-//   }
-//   .content {
-//     padding-left: 0;
-//   }
-//   .article-index {
-//     li, ul {
-//       padding-left: 0;
-//     }
-//   }
-// }

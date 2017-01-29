@@ -3,7 +3,6 @@ layout: default
 categories: Interview
 ---
 
-
 <div class="container">
 <div class="side-nav-placeholder">
   Take It Easy
@@ -12,7 +11,7 @@ categories: Interview
   <div class="side-nav">
     <div class="sidebar-header">
       <div class="col-left">
-        <h1>Jeffrey Silverstein</h1>
+        <h1>Jeffrey<br>Silverstein</h1>
       </div>
       <div class="col-right site-nav">
         <ul>
@@ -30,14 +29,14 @@ categories: Interview
       He has written for MTV, SPIN, Urban Outfitters, Bandcamp & more. He is also a co-founder of Singles Club, digital music journal & record club. He plays guitar and performs under the name Nassau.
     </div>
     <div class="publications">
-      <h5>Publication</h5>
+      <div class="title">Publication</div>
       {% for tags in site.tags %}
         <a href="/publication/{{ tags | first }}/">{{ tags | first }}</a>
       {% endfor %}
     </div>
 
     <div class="type">
-      <h5>Writing Type</h5>
+      <div class="title">Writing Type</div>
       {% for my_page in site.pages %}
         {% if my_page.title %}
           <a  href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.category }}</a>
@@ -58,10 +57,10 @@ categories: Interview
     {% for post in site.categories[page.categories] %}
       {% if post.url %}
           <li>
-            <img src="{{ post.thumbnail-image }}">
-            <h2 class="category">{{ post.categories }}</h2>
+            <img class="border-random" src="{{ post.thumbnail-image }}">
+            <div class="category">{{ post.categories }}</div>
             <a class="title" href="{{ post.external-url }} / {{ post.url }}">{{ post.title }}</a>
-            <h2 class="publication">{{ post.tags }}</h2>
+            <div class="publication">{{ post.tags }}</div>
           </li>
       {% endif %}
     {% endfor %}

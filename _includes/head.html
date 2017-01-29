@@ -9,7 +9,19 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link href="https://fonts.googleapis.com/css?family=Quattrocento:700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    <script type="text/javascript">
+    $(function(){
+    var colors = ['#DEEEFF', '#FED5B8', '#F7B5E0', '#FBEEE5'];
+    var boxes = document.querySelectorAll(".border-random");
+
+    for (i = 0; i < boxes.length; i++) {
+      // Pick a random color from the array 'colors'.
+      boxes[i].style.borderColor = colors[Math.floor(Math.random() * colors.length)];
+    }
+    });
+  </script>
 </head>
