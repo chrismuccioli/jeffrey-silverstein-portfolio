@@ -11,6 +11,8 @@ layout: default
 
 ## Jeffrey Silverstein grew up in the great state of New Jersey. Here is more info about him. Idk, put something here.
 
+![maxresdefault.jpg](/uploads/maxresdefault.jpg)
+
 ### Jeffrey Silverstein grew up in the great state of New Jersey. Here is more info about him. Idk, put something here.
 
 [Twitter](http://www.twitter.com) / [Facebook](http://facebook.com)
