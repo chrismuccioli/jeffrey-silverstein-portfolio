@@ -162,9 +162,11 @@ a {
     ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
     filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
     @include h1;
-    margin-top: 70px;
     color: $peach;
-    text-align: right;
+    text-align: left;
+    white-space: nowrap;
+    direction: rtl;
+    text-indent: 58px;
   }
 }
 
