@@ -1,6 +1,6 @@
 <li>
   <img class="border-random" src="{{ post.thumbnail-image }}">
   <div class="category">{{ post.categories }}</div>
-  <a class="title" href="{{ post.external-url }} / {{ post.url }}">{{ post.title }}</a>
+  <a class="title" href="{{ post.external-url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
   <div class="publication" ><a href="{{ site.baseurl }}/publication/{{ post.tags }}/">{{ post.tags }}</a></div>
 </li>
