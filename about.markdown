@@ -1,6 +1,7 @@
 ---
 title: About
 date: 2017-01-16 14:20:00 -05:00
+permalink: about
 layout: default
 ---
 
