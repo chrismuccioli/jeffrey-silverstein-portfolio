@@ -1,12 +1,62 @@
 ---
 layout: default
 ---
-
-<ul>{% for post in site.posts %}{% for tag in post.tags %}{% if tag == page.tag %}
-  <li>
-    <time datetime='{{post.date | date: "%Y-%m-%d"}}'>{{post.date | date: "%d/%m/%Y"}}</time>
-    <a href='{{post.url}}'>{{post.title}}</a>
-  </li>{% endif %}{% endfor %}{% endfor %}
+<div class="article-index">
+<ul>
+  {% for post in site.posts %}{% for tag in post.tags %}{% if tag == page.tag %}
+          <li>
+            <img class="border-random" src="{{ post.thumbnail-image }}">
+            <div class="category">{{ post.categories }}</div>
+            <a class="title" href="{{ post.external-url }} / {{ post.url }}">{{ post.title }}</a>
+            <div class="publication">{{ post.tags }}</div>
+          </li>
+  {% endif %}{% endfor %}{% endfor %}
 </ul>
+</div>
 
-<p><a href="/tags/">view all tags</a></p>
+<!-- <div class="container">
+<div class="side-nav-placeholder">
+  Take It Easy
+</div>
+<div class="side-nav-container">
+  <div class="side-nav">
+    <div class="sidebar-header">
+      <div class="col-left">
+        <h1>Jeffrey<br>Silverstein</h1>
+      </div>
+      <div class="col-right site-nav">
+        <ul>
+          <li><a href="#">Writing</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </div>
+    {% include _bio.html %}
+    {% include _category-nav.html %}
+</div>
+</div>
+
+<div class="page-title-container">
+  <div class="title">
+    <H1>{{ page.tags }}</h1>
+  </div>
+</div>
+<div class="page-content-container">
+   <div class="article-index">
+    <ul>
+    {% for post in site.tags[page.tags] %}
+      {% if post.url %}
+          <li>
+            <img class="border-random" src="{{ post.thumbnail-image }}">
+            <div class="category">{{ post.categories }}</div>
+            <a class="title" href="{{ post.external-url }} / {{ post.url }}">{{ post.title }}</a>
+            <div class="publication">{{ post.tags }}</div>
+          </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+</div>
+</div>
+ -->
