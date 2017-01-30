@@ -1,4 +1,5 @@
-$serif-family: 'Quattrocento', serif;
+$serif-family: 'Argus-Medium', serif;
+$serif-family-bold: 'Argus-Extra-Bold', serif;
 $sans-serif-family: 'Open Sans', sans-serif;
 $sans-cond-family: 'Open Sans Condensed', sans-serif;
 $blue: #DEEEFF;
@@ -9,14 +10,21 @@ $black: #28271F;
 $space: 10px;
 
 @font-face {
-    font-family: 'Argus';
-    src: url(http://www.font-face.com/fonts/delicious/Delicious-Roman.otf);
-    font-weight:400;
+    font-family: 'Argus-Medium';
+    src: url(https://dl.dropboxusercontent.com/u/329362103/Argus-RR-Medium.otf);
+}
+
+@font-face {
+    font-family: 'Argus-Extra-Bold';
+    src: url(https://dl.dropboxusercontent.com/u/329362103/Argus-RR-ExtraBold.otf);
 }
 
 @mixin serif {
   font-family: $serif-family;
-  font-weight: 700;
+}
+
+@mixin serif-bold {
+  font-family: $serif-family-bold;
 }
 
 @mixin sans-serif {
@@ -129,6 +137,10 @@ a {
       & .col-left {
         float: left;
         @include h1;
+        @include serif-bold;
+        h1 {
+          line-height: 30px !important;
+        }
       }
       & .col-right {
         text-align: right;
