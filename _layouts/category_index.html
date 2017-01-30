@@ -12,12 +12,12 @@ layout: core
 	{% for taxonomy in sortedtaxonomies %}
 		<h2><a href="{{ page.url | prepend: base_url | replace: "/index.html", "" | append: "/" | replace: "//", "/" }}{{ taxonomy }}/">{{ taxonomy }}</a></h2>
 	{% endfor %}
-{% else %} -->
+{% else %}
 	{% assign catpages = site.categories[page.category] | sort: 'date' %}
 	{% for post in catpages %}
 	    {% include _article-listing.html %}
 	{% endfor %}
-{% endif %}
+{% endif %} -->
 </ul>
 </div>
 </div>

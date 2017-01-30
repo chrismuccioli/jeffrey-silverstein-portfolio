@@ -8,6 +8,12 @@ $gray: #B9AEBC;
 $black: #28271F;
 $space: 10px;
 
+@font-face {
+    font-family: 'Argus';
+    src: url(http://www.font-face.com/fonts/delicious/Delicious-Roman.otf);
+    font-weight:400;
+}
+
 @mixin serif {
   font-family: $serif-family;
   font-weight: 700;
