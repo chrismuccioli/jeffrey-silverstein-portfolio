@@ -199,18 +199,16 @@ a {
    float: left;
 }
 
-.article-index {
+.article-index, .article-index-home {
   padding-top: $space*5;
   ul {
    list-style: none;
    padding-left: 0;
   }
   li {
-    width: 100%;
     display: -moz-inline-stack;
     display: inline-block;
     vertical-align: top;
-    border-bottom: $blue solid 1px;
     padding-top: $space*3;
     padding-bottom: $space*3;
     *display: inline;
@@ -241,6 +239,19 @@ a {
     @include h5;
     @include title-case;
   }
+
+.article-index-home {
+  li {
+    width: 350px;
+  }
+}
+
+.article-index {
+  li {
+    width: 100%;
+    border-bottom: $blue solid 1px;
+  }
+}
 
 //Styling for Default Posts
 
