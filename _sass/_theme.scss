@@ -87,7 +87,7 @@ h4, .h4 { @include h4; }
 
 @mixin h5 {
   font-size: 12px;
-  letter-spacing: 0em;
+  letter-spacing: 0.05em;
   line-height: 14px;
 }
 
@@ -175,7 +175,7 @@ a {
 
 .page-title-container {
   padding-top: 40px;
-  width: 10%;
+  width: 15%;
   float: left;
   .title {
     -webkit-transform:rotate(-90deg);
@@ -189,13 +189,13 @@ a {
     text-align: left;
     white-space: nowrap;
     direction: rtl;
-    text-indent: 58px;
+    text-indent: 110px;
     @include no-select;
   }
 }
 
 .page-content-container {
-   width: 60%;
+   width: 55%;
    float: left;
 }
 
