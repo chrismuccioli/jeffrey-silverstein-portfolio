@@ -2,14 +2,16 @@
    <div class="article-index">
     <ul>
     {% for post in site.categories[page.categories] %}
-      {% if post.url %}
           <li>
             <img class="border-random" src="{{ post.thumbnail-image }}">
             <div class="category">{{ post.categories }}</div>
-            <a class="title" href="{{ post.external-url }} / {{ post.url }}">{{ post.title }}</a>
+          {% if post.external-url %}
+            <a class="title" href="{{ post.external-url }}">{{ post.title }}</a>
+          {% else %}
+            <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+          {% endif %}
             <div class="publication">{{ post.tags }}</div>
           </li>
-      {% endif %}
     {% endfor %}
     </ul>
   </div>
