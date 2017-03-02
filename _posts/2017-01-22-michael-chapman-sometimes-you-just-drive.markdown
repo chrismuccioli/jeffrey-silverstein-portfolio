@@ -6,6 +6,7 @@ categories:
 tags:
 - Aquarium Drunkard
 thumbnail-image: http://www.aquariumdrunkard.com/wp-content/uploads/2016/11/Michael-Chapman-50-2-web-Constance-Mensh.jpg
+genre: test
 is-featured: true
 ---
 
