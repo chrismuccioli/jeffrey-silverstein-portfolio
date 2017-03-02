@@ -6,6 +6,7 @@ categories:
 tags:
 - Aquarium Drunkard
 thumbnail-image: http://www.aquariumdrunkard.com/wp-content/uploads/2016/11/Michael-Chapman-50-2-web-Constance-Mensh.jpg
+is-featured: true
 ---
 
 Veteran British songwriter and guitar-slinger Michael Chapman has reason to celebrate. 50, his forthcoming LP for Paradise of Bachelors commemorates five decades of recording and touring.  Set for release mere days before his 76th birthday, age has proved meaningless in the altogether radical output of Chapman’s career. On his first self-professed “American Record” to date, Chapman is routinely unpredictable, combining re-imaginations of deep cuts from albums past alongside new compositions.
