@@ -6,7 +6,7 @@
             <img class="border-random" src="{{ post.thumbnail-image }}">
             <div class="category">{{ post.categories }}</div>
           {% if post.external-url %}
-            <a class="title" href="{{ post.external-url }}">{{ post.title }}</a>
+            <a class="title" href="{{ post.external-url }}" target="_blank">{{ post.title }}</a>
           {% else %}
             <a class="title" href="{{ post.url }}">{{ post.title }}</a>
           {% endif %}

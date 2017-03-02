@@ -1,3 +1,5 @@
+@import "variables";
+
 $serif-family: 'Argus-Medium', serif;
 $serif-family-bold: 'Argus-Extra-Bold', serif;
 $sans-serif-family: 'Open Sans', sans-serif;
@@ -79,7 +81,7 @@ h3, .h3 { @include h3; }
 
 @mixin h4 {
   font-size: 16px;
-  letter-spacing: 0em;
+  letter-spacing: .05em;
   line-height: 22px;
 }
 
@@ -145,12 +147,29 @@ a {
       & .col-right {
         text-align: right;
       ul {
-        @include navlink;
         @include h4;
         line-height: 1.5em;
         list-style: none;
       }
+      li {
+        display: inline-block;
+        margin-right: 6px;
+      }
   }
+
+  .site-nav-horizontal {
+    padding-bottom: $space*2;
+        ul {
+          list-style: none;
+          @include h4;
+          padding-left: 0;
+          }
+        li {
+          display: inline-block;
+          margin-right: 6px;
+          @include serif-bold;
+        }
+      }
   .sidebar-header {
     padding-bottom: $space*4;
   }
@@ -173,9 +192,15 @@ a {
   }
 }
 
+@media screen and (max-width: $breakpoint-sm) {
+  .side-nav-container, .side-nav-placeholder {
+    display: none;
+  }
+}
+
 .page-title-container {
-  padding-top: 40px;
-  width: 15%;
+  padding-top: 0px;
+  width: 10%;
   float: left;
   .title {
     -webkit-transform:rotate(-90deg);
@@ -200,7 +225,7 @@ a {
 }
 
 .article-index, .article-index-home {
-  padding-top: $space*5;
+  padding-top: $space*2;
   ul {
    list-style: none;
    padding-left: 0;
@@ -212,6 +237,11 @@ a {
     padding-top: $space*3;
     padding-bottom: $space*3;
     *display: inline;
+    & .category {
+      a {
+        color: $peach;
+      }
+    }
   }
   img {
     max-width: 130px;
@@ -220,8 +250,8 @@ a {
   }
   & .title {
     font-size: 32px;
-    font-family: $serif-family;
     @include h1;
+    @include serif-bold;
   }
   & .publication {
     font-size: 16px;
@@ -235,7 +265,6 @@ a {
     padding-bottom: $space*1;
     @include sans-cond;
     text-transform: uppercase;
-    color: $peach;
     @include h5;
     @include title-case;
   }
@@ -309,3 +338,7 @@ a {
     margin-bottom: $space*3;
   }
 }
+
+
+
+// Styling for overlay
