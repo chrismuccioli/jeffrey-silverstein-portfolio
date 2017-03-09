@@ -155,7 +155,7 @@ html {
   position: fixed;
   padding-bottom: $space*1;
   & .title {
-    width: 50%;
+    width: 60%;
     display: inline-block;
     margin-top: 4px;
     color: #ffffff;
@@ -168,7 +168,7 @@ html {
     }
   }
   & .social {
-    width: 45%;
+    width: 35%;
     display: inline-block;
     float: right;
     text-align: right;
@@ -186,21 +186,6 @@ html {
     }
   }
 }
-
-// @media screen and (min-width: $breakpoint-sm) {
-//   .page-category {
-//     display: none;
-//   }
-// }
-
-// @media screen and (max-width: $breakpoint-sm) {
-//   .site-title {
-//     display: none;
-//   }
-//   .page-title-container {
-//     display: none;
-//   }
-// }
 
 //////////////////////////////////////////////////
 
