@@ -176,6 +176,9 @@ html {
     li {
         display: inline-block;
         margin-right: 6px;
+        img {
+          height: 16px;
+        }
       }
     ul {
       padding-right: $space*2;
@@ -412,7 +415,6 @@ html {
 
 //Styling for archived Posts
 .archived-post {
-  padding-right: $space*5;
   padding-top: $space*5;
 
   .article-title {

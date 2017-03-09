@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
-    <title>Fill 1</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Homepage" transform="translate(-386.000000, -73.000000)" fill="#28271F">
-            <path d="M402.647555,87.5043859 C402.647555,87.5983585 402.570938,87.6745526 402.477389,87.6745526 L387.523035,87.6745526 C387.429062,87.6745526 387.352445,87.5983585 387.352445,87.5043859 L387.352445,75.4970487 L393.934341,83.0758178 C394.209063,83.3920231 394.59723,83.5731957 395.000212,83.5731957 C395.40277,83.5731957 395.790937,83.3920231 396.065659,83.0758178 L402.647555,75.497472 L402.647555,87.5043859 Z M401.850058,74.3528679 L395.044658,82.1885803 C395.001058,82.2393763 394.999365,82.2393763 394.955342,82.1885803 L388.149942,74.3528679 L401.850058,74.3528679 Z M402.477389,73 L387.523035,73 C386.683207,73 386,73.6832067 386,74.5230346 L386,87.5043859 C386,88.3442137 386.683207,89.0274205 387.523035,89.0274205 L402.477389,89.0274205 C403.316793,89.0274205 404,88.3442137 404,87.5043859 L404,74.5230346 C404,73.6832067 403.316793,73 402.477389,73 L402.477389,73 Z" id="Fill-1"></path>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 18 17" enable-background="new 0 0 18 17" xml:space="preserve">
+<title>Fill 1</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Homepage" transform="translate(-386.000000, -73.000000)">
+		<path id="Fill-1" fill="#FFFFFF" d="M402.6,87.5c0,0.1-0.1,0.2-0.2,0.2h-15c-0.1,0-0.2-0.1-0.2-0.2v-12l6.6,7.6
+			c0.3,0.3,0.7,0.5,1.1,0.5c0.4,0,0.8-0.2,1.1-0.5l6.6-7.6V87.5z M401.9,74.4l-6.8,7.8c0,0.1,0,0.1-0.1,0l-6.8-7.8H401.9z M402.5,73
+			h-15c-0.8,0-1.5,0.7-1.5,1.5v13c0,0.8,0.7,1.5,1.5,1.5h15c0.8,0,1.5-0.7,1.5-1.5v-13C404,73.7,403.3,73,402.5,73L402.5,73z"/>
+	</g>
+</g>
 </svg>
