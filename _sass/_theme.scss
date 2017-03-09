@@ -6,6 +6,7 @@ $sans-serif-family: 'Open Sans', sans-serif;
 $sans-cond-family: 'Open Sans Condensed', sans-serif;
 $blue: #DEEEFF;
 $peach: #FED5B8;
+$red: #F95D5E;
 $pink: #F7B5E0;
 $gray: #B9AEBC;
 $black: #28271F;
@@ -118,6 +119,31 @@ a {
   }
 }
 
+html {
+//   background: linear-gradient(248deg, #fdf6f0, #ffffff);
+// background-size: 400% 400%;
+
+// -webkit-animation: bg-animate 30s ease infinite;
+// -moz-animation: bg-animate 30s ease infinite;
+// animation: bg-animate 30s ease infinite;
+
+// @-webkit-keyframes bg-animate {
+//     0%{background-position:0% 96%}
+//     50%{background-position:100% 5%}
+//     100%{background-position:0% 96%}
+// }
+// @-moz-keyframes bg-animate {
+//     0%{background-position:0% 96%}
+//     50%{background-position:100% 5%}
+//     100%{background-position:0% 96%}
+// }
+// @keyframes bg-animate {
+//     0%{background-position:0% 96%}
+//     50%{background-position:100% 5%}
+//     100%{background-position:0% 96%}
+// }
+}
+
 ////////////////////////////////////////////////// Top Nav
 
 .top-nav {
@@ -158,37 +184,28 @@ a {
   }
 }
 
-@media screen and (min-width: $breakpoint-sm) {
-  .page-category {
-    display: none;
-  }
-}
+// @media screen and (min-width: $breakpoint-sm) {
+//   .page-category {
+//     display: none;
+//   }
+// }
 
-@media screen and (max-width: $breakpoint-sm) {
-  .site-title {
-    display: none;
-  }
-  .page-title-container {
-    display: none;
-  }
-}
+// @media screen and (max-width: $breakpoint-sm) {
+//   .site-title {
+//     display: none;
+//   }
+//   .page-title-container {
+//     display: none;
+//   }
+// }
 
 //////////////////////////////////////////////////
 
 .page-title {
-    -webkit-transform:rotate(-90deg);
-    -moz-transform:rotate(-90deg);
-    -o-transform:rotate(-90deg);
-    transform:rotate(-90deg);
-    ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
-    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-    @include h1;
-    color: $peach;
-    text-align: left;
-    white-space: nowrap;
-    direction: rtl;
-    text-indent: 110px;
-    @include no-select;
+  @include h2;
+  color: $red;
+  letter-spacing: .08em;
+  margin-bottom: -15px;
 }
 
 .container {
@@ -275,7 +292,7 @@ a {
 .content-container {
   padding-left: 15%;
   padding-right: 15%;
-  padding-top: 50px;
+  padding-top: 75px;
 }
 
 .page-title-container {
@@ -310,12 +327,11 @@ a {
   .content-container {
     padding-left: 5% !important;
     padding-right: 5% !important;
-    padding-top: 10px;
+    padding-top: 100px;
   }
 }
 
 .article-index, .article-index-home {
-  padding-top: $space*2;
   ul {
    list-style: none;
    padding-left: 0;
