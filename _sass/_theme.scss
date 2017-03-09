@@ -300,6 +300,8 @@ body {
   margin-right: auto;
   padding-top: 10%;
   padding-bottom: $space*10;
+  padding-left: 5% !important;
+    padding-right: 5% !important;
 }
 
 .category-title {
@@ -317,8 +319,6 @@ body {
 
 @media screen and (max-width: $breakpoint-sm) {
   .content-container {
-    padding-left: 5% !important;
-    padding-right: 5% !important;
     padding-top: 100px;
   }
 }
