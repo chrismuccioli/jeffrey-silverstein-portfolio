@@ -1,24 +1,8 @@
 ---
 layout: core
-categories: Home
 ---
 
-<div class="page-title-container">
-  <div class="title">
-    Featured
-  </div>
-</div>
-<div class="page-content-container">
-   <div class="article-index">
-    <ul>
-    {% for post in site.categories[page.categories] %}
-      {% if post.url %}
-        {% include _article-listing.html %}
-      {% endif %}
-    {% endfor %}
-    </ul>
-  </div>
-</div>
+<div class="homepage-wrapper">
 
     <div class="publications">
       <div class="title">Publication</div>
