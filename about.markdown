@@ -5,6 +5,8 @@ permalink: about
 layout: default
 ---
 
+Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like?
+
 ![jeff-duo.jpg](/uploads/jeff-duo.jpg)
 
 # Jeffrey Silverstein grew up in the great state of New Jersey. Here is more info about him. Idk, put something here.
