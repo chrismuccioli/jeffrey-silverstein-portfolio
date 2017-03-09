@@ -9,13 +9,13 @@ layout: core
     </div>
     <div class="homepage-bio">
       Writer, musician, and teacher currently based in Brooklyn, NY.<br><br>
-      <span class="break">He has written for MTV, SPIN, Urban Outfitters, Bandcamp & more. He is also a co-founder of Singles Club, digital music journal & record club. He plays guitar and performs under the name Nassau.</span>
+      <span class="break">He has written for <a href="#">MTV</a>, <a href="#">SPIN</a>, <a href="#">Urban Outfitters</a>, <a href="#">Bandcamp</a> & more. He is also a co-founder of <a href="#">Singles Club</a>, digital music journal & record club. He plays guitar and performs under the name <a href="#">Nassau</a>.</span>
     </div>
     <div class="nav-block">
     <div class="homepage-navigation">
       <ul>
-        <li>All Writing→</li>
-        <li>Music→</li>
+        <li><a href="{{ site.baseurl }}/about">All Writing→</a></li>
+        <li><a href="{{ site.baseurl }}/about">Music→</a></li>
         <li><a href="{{ site.baseurl }}/about">About→</a></li>
       </ul>
     </div>
@@ -24,7 +24,7 @@ layout: core
         Sort by publication
       </div>
       {% for tags in site.tags %}
-        <a href="/publication/{{ tags | first }}/">{{ tags | first }}</a>
+        <a class="bold-link" href="/publication/{{ tags | first }}/">{{ tags | first }}</a>
       {% endfor %}
     </div>
     <div class="homepage-type">

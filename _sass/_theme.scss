@@ -9,7 +9,7 @@ $peach: #FED5B8;
 $red: #F95D5E;
 $pink: #F7B5E0;
 $gray: #B9AEBC;
-$black: #28271F;
+$black: #20003e;
 $space: 10px;
 
 @font-face {
@@ -106,7 +106,8 @@ h6, .h6 { @include h6; }
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: $black;
+  cursor: pointer;
 }
 
 @mixin navlink {
@@ -127,17 +128,31 @@ a {
 
 ////////////////////////////////////////////////// Homepage
 
+
 .homepage-wrapper {
   background-image: url(/uploads/jeff-duo.jpg);
   height: 100vh;
   width: 100vw;
   background-size: cover;
+  & a:hover {
+    color: $white;
+    border-bottom: 2px white solid;
+  }
+  & .content-container {
+    max-width: 960px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .homepage-title {
   @include h1;
-  color: $white;
+  color: $black;
   padding-bottom: $space*4;
+  @include serif-bold;
+  line-height: .92em;
+  letter-spacing: 0.03em !important;
 }
 
 .homepage-bio {
@@ -189,6 +204,8 @@ a {
     & a {
     @include sans-serif;
     @include h4;
+    margin-right: 20px;
+    white-space: nowrap;
   }
 }
 
@@ -198,7 +215,7 @@ a {
   width: 100%;
   min-height: 30px;
   z-index: 1;
-  background: $peach;
+  background-image: url(/uploads/jeff-duo.jpg);
   padding-top: $space*1;
   position: fixed;
   padding-bottom: $space*1;
@@ -238,8 +255,10 @@ a {
 ////////////////////////////////////////////////// Post Listings
 
 .content-container {
-  padding-left: 15%;
-  padding-right: 15%;
+  max-width: 960px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 75px;
 }
 
