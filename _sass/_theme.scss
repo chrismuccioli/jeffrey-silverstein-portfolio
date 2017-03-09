@@ -206,7 +206,7 @@ html {
 
 .page-title {
   @include h2;
-  color: $red;
+  color: $gray;
   letter-spacing: .08em;
   margin-bottom: -15px;
 }
@@ -415,7 +415,7 @@ html {
 
 //Styling for archived Posts
 .archived-post {
-  padding-top: $space*5;
+  padding-top: $space*3;
 
   .article-title {
     @include h1;
