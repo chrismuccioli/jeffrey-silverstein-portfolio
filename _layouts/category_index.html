@@ -3,13 +3,13 @@ layout: core
 ---
 
 {% include _page-nav.html %}
-<div class="content-container">
+<div class="content-container category-index">
+      <div class="category category-title">VIEWING ALL</div>
       <div class="page-title">
       {{ page.categories }}
       {{ page.tag }}
       {{ page.category }}s
     </div>
-<!-- <div class="page-content-container"> -->
 <div class="article-index">
 <ul>
 <!-- {% if page.category_root %}
@@ -25,5 +25,7 @@ layout: core
 {% endif %}
 </ul>
 </div>
-<!-- </div> -->
+</div>
+    <div class="footer">
+{% include _nav-block.html %}
 </div>
