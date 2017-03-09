@@ -5,7 +5,7 @@ permalink: about
 layout: default
 ---
 
-#Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like?
+# Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like?
 
 ![jeff-duo.jpg](/uploads/jeff-duo.jpg)
 
