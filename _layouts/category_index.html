@@ -2,26 +2,9 @@
 layout: core
 ---
 
-<div class="top-nav">
-  <a href="{{ site.url }}">
-    <div class="title">
-      <div class="back-arrow">
-      ←
-      </div>
-      <span class="site-title">Jeffrey Silverstein </span><span class="page-category"> {{ page.category }} </span>
-    </div>
-  </a>
-  <div class="social">
-    <ul>
-      <li><a href="#"><img src="{{ site.url }}/images/email-icon.svg" style="height:16px;"></a></li>
-      <li><a href="#"><img src="{{ site.url }}/images/twitter-icon.svg" style="margin-left: 1px; margin-bottom: 1px;"></a></li>
-      <li><a href="{{ site.url }}/about"><img src="{{ site.url }}/images/instagram-icon.svg"></a></li>
-    </ul>
-  </div>
-</div>
+{% include _page-nav.html %}
 <div class="content-container">
-{% include _page-title.html %}
-<div class="page-content-container">
+<!-- <div class="page-content-container"> -->
 <div class="article-index">
 <ul>
 <!-- {% if page.category_root %}
@@ -37,5 +20,5 @@ layout: core
 {% endif %}
 </ul>
 </div>
-</div>
+<!-- </div> -->
 </div>
