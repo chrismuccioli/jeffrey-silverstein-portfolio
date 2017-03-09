@@ -119,29 +119,10 @@ a {
   }
 }
 
-html {
-//   background: linear-gradient(248deg, #fdf6f0, #ffffff);
-// background-size: 400% 400%;
-
-// -webkit-animation: bg-animate 30s ease infinite;
-// -moz-animation: bg-animate 30s ease infinite;
-// animation: bg-animate 30s ease infinite;
-
-// @-webkit-keyframes bg-animate {
-//     0%{background-position:0% 96%}
-//     50%{background-position:100% 5%}
-//     100%{background-position:0% 96%}
-// }
-// @-moz-keyframes bg-animate {
-//     0%{background-position:0% 96%}
-//     50%{background-position:100% 5%}
-//     100%{background-position:0% 96%}
-// }
-// @keyframes bg-animate {
-//     0%{background-position:0% 96%}
-//     50%{background-position:100% 5%}
-//     100%{background-position:0% 96%}
-// }
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 ////////////////////////////////////////////////// Top Nav
@@ -187,7 +168,13 @@ html {
   }
 }
 
-//////////////////////////////////////////////////
+////////////////////////////////////////////////// Post Listings
+
+.content-container {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 75px;
+}
 
 .page-title {
   @include h2;
@@ -196,122 +183,7 @@ html {
   margin-bottom: -15px;
 }
 
-.container {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.side-nav-container, .side-nav-placeholder {
-  width: 30%;
-  background-color: #FBEEE5;
-  float: left;
-  height: 100%;
-}
-
-.side-nav-container {
-  position: fixed;
-  .side-nav {
-    padding-top: $space*5;
-    padding-left: $space*5;
-    padding-right: $space*5;
-      & .col-left {
-        float: left;
-        @include h1;
-        @include serif-bold;
-        h1 {
-          line-height: 30px !important;
-        }
-      }
-      & .col-right {
-        text-align: right;
-      ul {
-        @include h4;
-        line-height: 1.5em;
-        list-style: none;
-      }
-      li {
-        display: inline-block;
-        margin-right: 6px;
-      }
-  }
-
-  .site-nav-horizontal {
-    padding-bottom: $space*2;
-        ul {
-          list-style: none;
-          @include h4;
-          padding-left: 0;
-          }
-        li {
-          display: inline-block;
-          margin-right: 6px;
-          @include serif-bold;
-        }
-      }
-  .sidebar-header {
-    padding-bottom: $space*4;
-  }
-  .bio {
-    @include h4;
-    padding-bottom: $space*2;
-  }
-    .title {
-      @include h5;
-      @include title-case;
-      @include sans-cond;
-      padding-bottom: $space*1;
-    }
-    .publications, .type {
-      @include h4;
-      @include sans-serif;
-      padding-bottom: $space*3;
-      color: $peach;
-    }
-  }
-}
-
 @media screen and (max-width: $breakpoint-sm) {
-  .side-nav-container, .side-nav-placeholder {
-    display: none;
-  }
-}
-
-.content-container {
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 75px;
-}
-
-.page-title-container {
-  padding-top: 20px;
-  float: left;
-  .title {
-    -webkit-transform:rotate(-90deg);
-    -moz-transform:rotate(-90deg);
-    -o-transform:rotate(-90deg);
-    transform:rotate(-90deg);
-    ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
-    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-    @include h1;
-    color: $peach;
-    text-align: left;
-    white-space: nowrap;
-    direction: rtl;
-    text-indent: 110px;
-    @include no-select;
-  }
-}
-
-.page-content-container {
-   width: 100%;
-   float: left;
-}
-
-@media screen and (max-width: $breakpoint-sm) {
-  .page-content-container {
-     width: 90% !important;
-  }
   .content-container {
     padding-left: 5% !important;
     padding-right: 5% !important;
@@ -319,7 +191,7 @@ html {
   }
 }
 
-.article-index, .article-index-home {
+.article-index {
   ul {
    list-style: none;
    padding-left: 0;
@@ -363,12 +235,6 @@ html {
     @include title-case;
   }
 
-.article-index-home {
-  li {
-    width: 350px;
-  }
-}
-
 .article-index {
   li {
     width: 100%;
@@ -376,7 +242,7 @@ html {
   }
 }
 
-//Styling for Default Posts
+////////////////////////////////////////////////// Default Pages
 
 .default-content-container {
   width: 100%;
@@ -398,7 +264,8 @@ html {
 }
 
 
-//Styling for archived Posts
+////////////////////////////////////////////////// Archived Posts
+
 .archived-post {
   padding-top: $space*3;
 
@@ -432,7 +299,3 @@ html {
     margin-bottom: $space*3;
   }
 }
-
-
-
-// Styling for overlay
