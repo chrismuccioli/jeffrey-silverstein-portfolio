@@ -81,7 +81,7 @@ h2, .h2 { @include h2; }
 h3, .h3 { @include h3; }
 
 @mixin h4 {
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: .05em;
   line-height: 22px;
 }
@@ -130,7 +130,66 @@ a {
 .homepage-wrapper {
   background-image: url(/uploads/jeff-duo.jpg);
   height: 100vh;
+  width: 100vw;
   background-size: cover;
+}
+
+.homepage-title {
+  @include h1;
+  color: $white;
+  padding-bottom: $space*4;
+}
+
+.homepage-bio {
+  @include h1;
+  color: #ffffff;
+  padding-bottom: $space*4;
+  & .break {
+    padding-top: $space*2;
+  }
+}
+
+.nav-block {
+  display: inline-block;
+  width: 100%;
+}
+
+.homepage-navigation {
+  width: 30%;
+  float: left;
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  li {
+    @include h1;
+    @include serif-bold;
+  }
+}
+
+.homepage-publications {
+  width: 35%;
+  float: right;
+}
+
+.homepage-type {
+  width: 35%;
+  float: right;
+}
+
+.homepage-type, .homepage-publications {
+    & .title {
+    padding-bottom: $space*1;
+    @include sans-cond;
+    text-transform: uppercase;
+    @include h5;
+    @include title-case;
+    color: $white;
+  }
+    & a {
+    @include sans-serif;
+    @include h4;
+  }
 }
 
 ////////////////////////////////////////////////// Top Nav
