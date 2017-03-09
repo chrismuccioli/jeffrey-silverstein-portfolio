@@ -1,0 +1,18 @@
+---
+layout: core
+---
+
+{% include _page-nav.html %}
+<div class="content-container">
+<div class="article-index">
+<ul>
+  {% for post in site.posts %}
+{% include _article-listing.html %}
+{% endfor %}
+</ul>
+</div>
+</div>
+</div>
+    <div class="footer">
+{% include _nav-block.html %}
+</div>
