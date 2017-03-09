@@ -2,14 +2,14 @@
 layout: core
 ---
 
-{% include _side-bar-tags.html %}
-{% include _page-title.html %}
-<div class="page-content-container">
+{% include _page-nav.html %}
+<div class="content-container">
 <div class="article-index">
 <ul>
   {% for post in site.posts %}{% for tag in post.tags %}{% if tag == page.tag %}
     {% include _article-listing.html %}
   {% endif %}{% endfor %}{% endfor %}
 </ul>
+</div>
 </div>
 </div>
