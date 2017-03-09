@@ -3,19 +3,41 @@ layout: core
 ---
 
 <div class="homepage-wrapper">
-
-    <div class="publications">
-      <div class="title">Publication</div>
+<div class="content-container">
+    <div class="homepage-title">
+      Jeffrey<br>Silverstein
+    </div>
+    <div class="homepage-bio">
+      Writer, musician, and teacher currently based in Brooklyn, NY.<br><br>
+      <span class="break">He has written for MTV, SPIN, Urban Outfitters, Bandcamp & more. He is also a co-founder of Singles Club, digital music journal & record club. He plays guitar and performs under the name Nassau.</span>
+    </div>
+    <div class="nav-block">
+    <div class="homepage-navigation">
+      <ul>
+        <li>All Writing→</li>
+        <li>Music→</li>
+        <li><a href="{{ site.baseurl }}/about">About→</a></li>
+      </ul>
+    </div>
+    <div class="homepage-publications">
+      <div class="title">
+        Sort by publication
+      </div>
       {% for tags in site.tags %}
         <a href="/publication/{{ tags | first }}/">{{ tags | first }}</a>
       {% endfor %}
     </div>
-
-    <div class="type">
-      <div class="title">Writing Type</div>
+    <div class="homepage-type">
+      <div class="title">
+        sort by writing type
+      </div>
       {% for my_page in site.pages %}
         {% if my_page.title %}
           <a  href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.category }}</a>
         {% endif %}
       {% endfor %}
     </div>
+  </div>
+
+</div>
+</div>
