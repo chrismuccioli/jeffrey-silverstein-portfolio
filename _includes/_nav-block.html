@@ -1,0 +1,27 @@
+    <div class="nav-block">
+    <div class="homepage-navigation">
+      <ul>
+        <li><a href="{{ site.baseurl }}/about">All Writing→</a></li>
+        <li><a href="{{ site.baseurl }}/about">Music→</a></li>
+        <li><a href="{{ site.baseurl }}/about">About→</a></li>
+      </ul>
+    </div>
+    <div class="homepage-publications">
+      <div class="title">
+        Sort by publication
+      </div>
+      {% for tags in site.tags %}
+        <a class="bold-link" href="/publication/{{ tags | first }}/">{{ tags | first }}</a>
+      {% endfor %}
+    </div>
+    <div class="homepage-type">
+      <div class="title">
+        sort by writing type
+      </div>
+      {% for my_page in site.pages %}
+        {% if my_page.title %}
+          <a  href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.category }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
