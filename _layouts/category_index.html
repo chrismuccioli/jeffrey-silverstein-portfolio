@@ -2,7 +2,24 @@
 layout: core
 ---
 
-{% include _side-bar-tags.html %}
+<div class="top-nav">
+  <a href="{{ site.url }}">
+    <div class="title">
+      <div class="back-arrow">
+      ←
+      </div>
+      <span class="site-title">Jeffrey Silverstein </span><span class="page-category"> {{ page.category }} </span>
+    </div>
+  </a>
+  <div class="social">
+    <ul>
+      <li><a href="#"><img src="{{ site.url }}/images/email-icon.svg"></a></li>
+      <li><a href="#"><img src="{{ site.url }}/images/twitter-icon.svg"></a></li>
+      <li><a href="{{ site.url }}/about"><img src="{{ site.url }}/images/instagram-icon.svg"></a></li>
+    </ul>
+  </div>
+</div>
+
 {% include _page-title.html %}
 <div class="page-content-container">
 <div class="article-index">
