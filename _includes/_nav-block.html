@@ -20,7 +20,7 @@
       </div>
       {% for my_page in site.pages %}
         {% if my_page.title %}
-          <a  href="{{ site.baseurl }}/writing/{{ my_page.category }}">{{ my_page.category }}</a>
+          <a  href="{{ site.baseurl }}/writing/{{ my_page.category }}/">{{ my_page.category }}</a>
         {% endif %}
       {% endfor %}
     </div>
