@@ -5,7 +5,7 @@ categories:
 - Interview
 tags:
 - MTV Hive
-thumbnail-image: http://67.media.tumblr.com/d8ac96867e5b78166a597dcd36eb5422/tumblr_nfpqi8YWB11u064vvo1_500.jpg
+thumbnail-image: https://s-media-cache-ak0.pinimg.com/originals/42/af/14/42af142e9d78d91a9f0aa6ff766e43b4.jpg
 ---
 
 Brooklyn-based indie label Captured Tracks has built an unwavering foundation over the past five years. Since its inception in Greenpoint in 2009, owner Mike Sniper has compiled a roster ripe with unprecedented young talent ([Widowspeak](http://www.mtv.com/artists/widowspeak/), [Beach Fossils](http://www.mtv.com/artists/beach-fossils/), [Mac DeMarco](http://www.mtv.com/artists/mac-demarco/)) and coupled their releases with reissues from indie major leagues like [The Clean](http://www.mtv.com/artists/the-clean-1/), [Medicine](http://www.mtv.com/artists/medicine/) and Wake. Having once shared space with Academy Records in Williamsburg and with friends at the Mexican Summer label's location, Sniper was on the hunt for the first space of their own. Now serving as both office space for the label and the recently opened Captured Tracks Shop, 195 Calyer Street in Greenpoint is a permanent home.
