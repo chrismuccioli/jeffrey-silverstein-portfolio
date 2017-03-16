@@ -5,16 +5,14 @@ permalink: about
 layout: default
 ---
 
-# Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like? Testing more shit. What's this look like?
+# Jeffrey Silverstein is a writer, musician, and teacher living and working in Brooklyn, NY.  Originally from the suburbs of NJ, Jeffrey graduated from Towson University where he studied Journalism. Upon moving to New York City, Jeffrey worked as a community manager for MTV before being accepted into the New York City Teaching Fellows program. Jeffrey teaches special education at an alternative high school in downtown Brooklyn. He plays guitar and performs under the name Nassau.
 
 ![jeff-duo.jpg](/uploads/jeff-duo.jpg)
 
-# Jeffrey Silverstein grew up in the great state of New Jersey. Here is more info about him. Idk, put something here.
+# 
 
-## Jeffrey Silverstein grew up in the great state of New Jersey. Here is more info about him. Idk, put something here.
+## 
 
-![maxresdefault.jpg](/uploads/maxresdefault.jpg)
-
-### Jeffrey Silverstein grew up in the great state of New Jersey. Here is more info about him. Idk, put something here.
+### 
 
 [Twitter](http://www.twitter.com) / [Facebook](http://facebook.com)
