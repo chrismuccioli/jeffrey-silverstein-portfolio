@@ -1,0 +1,11 @@
+---
+title: NYC Taper
+date: 2017-03-21 19:20:00 -04:00
+categories:
+- Feature
+tags:
+- Smith Journal
+thumbnail-image: http://www.smithjournal.com.au/images/blogs/2017/NYCTaper/nyctapehackman.jpg.pagespeed.ce.hWbTem7weY.jpg
+external-url: http://www.smithjournal.com.au/blogs/arts/2919-listen-to-the-world-s-largest-bootleg-music-collection
+---
+
