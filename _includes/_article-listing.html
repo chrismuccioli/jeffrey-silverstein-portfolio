@@ -1,0 +1,10 @@
+<li>
+  <img class="border-random" src="{{ post.thumbnail-image }}">
+  <div class="category"><a href="{{ site.baseurl }}/writing/{{ post.categories }}/">{{ post.categories }}</a></div>
+            {% if post.external-url %}
+            <a class="title" href="{{ post.external-url }}" target="_blank">{{ post.title }}</a>
+          {% else %}
+            <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+          {% endif %}
+  <div class="publication" ><a href="{{ site.baseurl }}/publication/{{ post.tags }}/">{{ post.tags }}</a></div>
+</li>

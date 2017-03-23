@@ -1,0 +1,20 @@
+---
+layout: core
+---
+
+{% include _page-nav.html %}
+<div class="content-container">
+  <div class="page-title">
+      Archived Post
+    </div>
+<div class="archived-post">
+<div class="category"><a href="{{ site.baseurl }}/writing/{{ page.categories }}/">{{ page.categories }}</a></div>
+<div class="article-title">{{ page.title }}</div>
+<div class="source">This article originally appeared on {{ page.tags }}</div>
+<img class="border-random" src="{{ page.thumbnail-image }}">
+{{ content }}
+</div>
+</div>
+    <div class="footer">
+      {% include _nav-block.html %}
+    </div>

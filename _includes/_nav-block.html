@@ -1,0 +1,27 @@
+    <div class="nav-block">
+    <div class="homepage-navigation">
+      <ul>
+        <li><a href="{{ site.baseurl }}/writing/all">All Writing→</a></li>
+        <li><a href="https://www.facebook.com/nassautheband">Music→</a></li>
+        <li><a href="{{ site.baseurl }}/about">About→</a></li>
+      </ul>
+    </div>
+    <div class="homepage-publications">
+      <div class="title">
+        Sort by publication
+      </div>
+      {% for tags in site.tags %}
+        <a class="bold-link" href="{{ site.baseurl }}/publication/{{ tags | first }}/">{{ tags | first }}</a>
+      {% endfor %}
+    </div>
+    <div class="homepage-type">
+      <div class="title">
+        sort by writing type
+      </div>
+      {% for my_page in site.pages %}
+        {% if my_page.title %}
+          <a  href="{{ site.baseurl }}/writing/{{ my_page.category }}/">{{ my_page.category }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>

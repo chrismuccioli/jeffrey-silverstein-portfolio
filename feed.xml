@@ -1,165 +1,31 @@
+---
+layout: 
+---
+
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jeffrey Silverstein</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-tag_page_layout: tag_page tag_page_dir: tag tag_permalink_style: pretty
-</description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 23 Mar 2017 15:29:32 -0400</pubDate>
-    <lastBuildDate>Thu, 23 Mar 2017 15:29:32 -0400</lastBuildDate>
-    <generator>Jekyll v3.3.1</generator>
-    
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    {% for post in site.posts limit:10 %}
       <item>
-        <title>Rae Tutera</title>
-        <description>
-</description>
-        <pubDate>Tue, 21 Mar 2017 19:21:00 -0400</pubDate>
-        <link>http://yourdomain.com/interview/rae-tutera.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/interview/rae-tutera.html</guid>
-        
-        <category>Brooklyn Magazine</category>
-        
-        
-        <category>Interview</category>
-        
+        <title>{{ post.title | xml_escape }}</title>
+        <description>{{ post.content | xml_escape }}</description>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        {% for tag in post.tags %}
+        <category>{{ tag | xml_escape }}</category>
+        {% endfor %}
+        {% for cat in post.categories %}
+        <category>{{ cat | xml_escape }}</category>
+        {% endfor %}
       </item>
-    
-      <item>
-        <title>NYC Taper</title>
-        <description>
-</description>
-        <pubDate>Tue, 21 Mar 2017 19:20:00 -0400</pubDate>
-        <link>http://yourdomain.com/feature/nyc-taper.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/feature/nyc-taper.html</guid>
-        
-        <category>Smith Journal</category>
-        
-        
-        <category>Feature</category>
-        
-      </item>
-    
-      <item>
-        <title>Fire Talk With Me</title>
-        <description>
-</description>
-        <pubDate>Thu, 16 Mar 2017 19:07:00 -0400</pubDate>
-        <link>http://yourdomain.com/feature/fire-talk-with-me.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/feature/fire-talk-with-me.html</guid>
-        
-        <category>Singles Club</category>
-        
-        
-        <category>Feature</category>
-        
-      </item>
-    
-      <item>
-        <title>Quilt - Eye Of The Pearl</title>
-        <description>
-</description>
-        <pubDate>Thu, 16 Mar 2017 18:28:00 -0400</pubDate>
-        <link>http://yourdomain.com/track%20review/quilt-eye-of-the-pearl.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/track%20review/quilt-eye-of-the-pearl.html</guid>
-        
-        <category>AdHoc</category>
-        
-        
-        <category>Track Review</category>
-        
-      </item>
-    
-      <item>
-        <title>Brandon Locher</title>
-        <description>
-</description>
-        <pubDate>Thu, 16 Mar 2017 18:26:00 -0400</pubDate>
-        <link>http://yourdomain.com/track%20review/brandon-locher.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/track%20review/brandon-locher.html</guid>
-        
-        <category>Decoder Magazine</category>
-        
-        
-        <category>Track Review</category>
-        
-      </item>
-    
-      <item>
-        <title>Paw Paw</title>
-        <description>
-</description>
-        <pubDate>Thu, 16 Mar 2017 18:25:00 -0400</pubDate>
-        <link>http://yourdomain.com/album%20review/paw-paw.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/album%20review/paw-paw.html</guid>
-        
-        <category>Decoder Magazine</category>
-        
-        
-        <category>Album Review</category>
-        
-      </item>
-    
-      <item>
-        <title>Trials, Troubles, Tribulations</title>
-        <description>
-</description>
-        <pubDate>Thu, 16 Mar 2017 18:23:00 -0400</pubDate>
-        <link>http://yourdomain.com/feature/trials-troubles-tribulations.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/feature/trials-troubles-tribulations.html</guid>
-        
-        <category>Decoder Magazine</category>
-        
-        
-        <category>Feature</category>
-        
-      </item>
-    
-      <item>
-        <title>Smoke Bellow - Hitching Post</title>
-        <description>
-</description>
-        <pubDate>Thu, 16 Mar 2017 18:23:00 -0400</pubDate>
-        <link>http://yourdomain.com/track%20review/smoke-bellow-hitching-post.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/track%20review/smoke-bellow-hitching-post.html</guid>
-        
-        <category>Decoder Magazine</category>
-        
-        
-        <category>Track Review</category>
-        
-      </item>
-    
-      <item>
-        <title>Cherie Cherie</title>
-        <description>
-</description>
-        <pubDate>Thu, 16 Mar 2017 18:21:00 -0400</pubDate>
-        <link>http://yourdomain.com/track%20review/cherie-cherie.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/track%20review/cherie-cherie.html</guid>
-        
-        <category>Decoder Magazine</category>
-        
-        
-        <category>Track Review</category>
-        
-      </item>
-    
-      <item>
-        <title>Wing Dam - Software</title>
-        <description>
-</description>
-        <pubDate>Thu, 16 Mar 2017 18:20:00 -0400</pubDate>
-        <link>http://yourdomain.com/track%20review/wing-dam-software.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/track%20review/wing-dam-software.html</guid>
-        
-        <category>Decoder Magazine</category>
-        
-        
-        <category>Track Review</category>
-        
-      </item>
-    
+    {% endfor %}
   </channel>
 </rss>

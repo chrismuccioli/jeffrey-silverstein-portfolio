@@ -1,0 +1,11 @@
+---
+title: Murals
+date: 2017-03-16 17:57:00 -04:00
+categories:
+- Track Review
+tags:
+- SPIN
+thumbnail-image: http://static.spin.com/files/2016/01/murals-press-photo-940-640x427.jpg
+external-url: http://www.spin.com/2016/01/murals-watching-in-the-dark-premiere-stream/
+---
+

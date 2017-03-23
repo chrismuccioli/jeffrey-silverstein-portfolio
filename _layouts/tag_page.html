@@ -1,0 +1,23 @@
+---
+layout: core
+---
+
+{% include _page-nav.html %}
+<div class="content-container">
+        <div class="page-title">
+      {{ page.categories }}
+      {{ page.tag }}
+      {{ page.category }}
+    </div>
+<div class="article-index">
+<ul>
+  {% for post in site.posts %}{% for tag in post.tags %}{% if tag == page.tag %}
+    {% include _article-listing.html %}
+  {% endif %}{% endfor %}{% endfor %}
+</ul>
+</div>
+</div>
+</div>
+    <div class="footer">
+{% include _nav-block.html %}
+</div>
