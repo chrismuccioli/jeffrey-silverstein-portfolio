@@ -1,0 +1,31 @@
+---
+layout: core
+---
+
+{% include _page-nav.html %}
+<div class="content-container category-index">
+<!--       <div class="category category-title">VIEWING ALL</div> -->
+      <div class="page-title">
+      {{ page.categories }}
+      {{ page.tag }}
+      {{ page.category }}s
+    </div>
+<div class="article-index">
+<ul>
+<!-- {% if page.category_root %}
+	{% include taxonomy_sort.html source=site.categories %}
+	{% for taxonomy in sortedtaxonomies %}
+		<h2><a href="{{ page.url | prepend: base_url | replace: "/index.html", "" | append: "/" | replace: "//", "/" }}{{ taxonomy }}/">{{ taxonomy }}</a></h2>
+	{% endfor %}
+{% else %} -->
+{% assign catpages = site.categories[page.category] | sort: 'date' %}
+	{% for post in catpages %}
+	    {% include _article-listing.html %}
+	{% endfor %}
+{% endif %}
+</ul>
+</div>
+</div>
+    <div class="footer">
+{% include _nav-block.html %}
+</div>

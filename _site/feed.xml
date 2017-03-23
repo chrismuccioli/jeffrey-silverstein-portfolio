@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jeffrey Silverstein</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+tag_page_layout: tag_page tag_page_dir: tag tag_permalink_style: pretty
+</description>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 11 Mar 2017 10:36:55 -0500</pubDate>
+    <lastBuildDate>Sat, 11 Mar 2017 10:36:55 -0500</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>America: Lonely People</title>
+        <description>
+</description>
+        <pubDate>Sun, 22 Jan 2017 12:45:00 -0500</pubDate>
+        <link>http://yourdomain.com/track%20review/america-lonely-people.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/track%20review/america-lonely-people.html</guid>
+        
+        <category>Escape Brooklyn</category>
+        
+        
+        <category>Track Review</category>
+        
+      </item>
+    
+      <item>
+        <title>Anthology Recordings</title>
+        <description>
+</description>
+        <pubDate>Sun, 22 Jan 2017 12:44:00 -0500</pubDate>
+        <link>http://yourdomain.com/interview/anthology-recordings.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/interview/anthology-recordings.html</guid>
+        
+        <category>Anthology Recordings</category>
+        
+        
+        <category>Interview</category>
+        
+      </item>
+    
+      <item>
+        <title>Michael Chapman: Sometimes You Just Drive</title>
+        <description>&lt;p&gt;Veteran British songwriter and guitar-slinger Michael Chapman has reason to celebrate. 50, his forthcoming LP for Paradise of Bachelors commemorates five decades of recording and touring.  Set for release mere days before his 76th birthday, age has proved meaningless in the altogether radical output of Chapman’s career. On his first self-professed “American Record” to date, Chapman is routinely unpredictable, combining re-imaginations of deep cuts from albums past alongside new compositions.&lt;/p&gt;
+
+&lt;p&gt;Inspired by the incessant flooding that wreaked havoc on the town of Carlisle (UK) beginning in 2015, “Sometimes You Just Drive” finds Chapman boldly confronting the End of Days. Recorded and mixed at Jason Meager’s (No-Neck Blues Band) Black Dirt Studio, Chapman’s gravelly, biting vocals sound revitalized as he sings ‘The waters still rising after the storm, sun don’t shine to keep us warm.’  For a renowned songwriter, it’s inspiring to see Chapman remain so open to the spirit of collaboration of friends both new and old. Producer Steve Gunn’s guitar interplay adds a kaleidoscopic lens to the songs down-home, introspective mood. Sparse instrumentation leaves room for backing vocals from luminary Bridget St. John to shine through. Together, Chapman is renewed, further proving the transcendental power of his music. words / j silverstein&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;450&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/236630109&amp;amp;color=ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Sun, 22 Jan 2017 12:42:00 -0500</pubDate>
+        <link>http://yourdomain.com/track%20review/michael-chapman-sometimes-you-just-drive.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/track%20review/michael-chapman-sometimes-you-just-drive.html</guid>
+        
+        <category>Aquarium Drunkard</category>
+        
+        
+        <category>Track Review</category>
+        
+      </item>
+    
+      <item>
+        <title>NO HEADLINERS: HOW SOFAR SOUNDS WENT FROM PET PROJECT TO GLOBAL MOVEMENT</title>
+        <description>
+</description>
+        <pubDate>Sun, 22 Jan 2017 12:41:00 -0500</pubDate>
+        <link>http://yourdomain.com/feature/no-headliners-how-sofar-sounds-went-from-pet-project-to-global-movement.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/feature/no-headliners-how-sofar-sounds-went-from-pet-project-to-global-movement.html</guid>
+        
+        <category>Live Nation</category>
+        
+        
+        <category>Feature</category>
+        
+      </item>
+    
+      <item>
+        <title>Soft Cat: All Energy Will Rise</title>
+        <description>
+</description>
+        <pubDate>Sun, 22 Jan 2017 12:40:00 -0500</pubDate>
+        <link>http://yourdomain.com/album%20review/soft-cat-all-energy-will-rise.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/album%20review/soft-cat-all-energy-will-rise.html</guid>
+        
+        <category>Aquarium Drunkard</category>
+        
+        
+        <category>Album Review</category>
+        
+      </item>
+    
+      <item>
+        <title>Kevin Morby</title>
+        <description>
+</description>
+        <pubDate>Sun, 22 Jan 2017 12:40:00 -0500</pubDate>
+        <link>http://yourdomain.com/interview/kevin-morby.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/interview/kevin-morby.html</guid>
+        
+        <category>Aquarium Drunkard</category>
+        
+        
+        <category>Interview</category>
+        
+      </item>
+    
+      <item>
+        <title>Terry Allen</title>
+        <description>
+</description>
+        <pubDate>Sun, 22 Jan 2017 12:38:00 -0500</pubDate>
+        <link>http://yourdomain.com/interview/terry-allen.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/interview/terry-allen.html</guid>
+        
+        <category>Aquarium Drunkard</category>
+        
+        
+        <category>Interview</category>
+        
+      </item>
+    
+  </channel>
+</rss>

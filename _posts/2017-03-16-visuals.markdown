@@ -1,0 +1,11 @@
+---
+title: Visuals
+date: 2017-03-16 18:00:00 -04:00
+categories:
+- Interview
+tags:
+- Turntable Kitchen
+thumbnail-image: http://www.turntablekitchen.com/_uploads/visuals_press_shot_matt_lambert-1.jpg
+external-url: http://www.turntablekitchen.com/2014/10/interview-visuals/
+---
+
