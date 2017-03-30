@@ -18,10 +18,15 @@
       <div class="title">
         sort by writing type
       </div>
-      {% for my_page in site.pages %}
+      <a href="{{ site.baseurl }}/writing/interview/" class="bold-link">Interview</a>
+      <a href="{{ site.baseurl }}/writing/album review/" class="bold-link">Album Review</a>
+      <a href="{{ site.baseurl }}/writing/feature/" class="bold-link">Feature</a>
+      <a href="{{ site.baseurl }}/writing/track review/" class="bold-link">Track Review</a>
+<!-- Uncomment once fixed! -->
+<!--       {% for my_page in site.pages %}
         {% if my_page.title %}
           <a  href="{{ site.baseurl }}/writing/{{ my_page.category }}/">{{ my_page.category }}</a>
         {% endif %}
-      {% endfor %}
+      {% endfor %} -->
     </div>
   </div>
