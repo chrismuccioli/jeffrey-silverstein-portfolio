@@ -177,7 +177,7 @@ body {
   @include h1;
   color: #ffffff;
   padding-bottom: $space*4;
-  & .break {
+  & .paragraph {
     padding-top: $space*2;
   }
 }
