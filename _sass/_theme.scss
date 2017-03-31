@@ -67,15 +67,15 @@ h1, .h1 { @include h1; }
 
 @mixin h2 {
   font-size: 23px;
-  letter-spacing: 0em;
-  line-height: 23px;
+  letter-spacing: 0.08em;
+  line-height: 29px;
 }
 
 h2, .h2 { @include h2; }
 
 @mixin h3 {
   font-size: 18px;
-  letter-spacing: 0em;
+  letter-spacing: 0.08em;
   line-height: 22px;
 }
 
@@ -119,6 +119,14 @@ a {
   text-decoration: none;
   color: $black;
   cursor: pointer;
+}
+
+.default-content a {
+  letter-spacing: 0.08em;
+}
+
+.default-content a:hover {
+  color: $gray;
 }
 
 a:hover {
@@ -439,6 +447,7 @@ body {
     padding-bottom: $space*3;
     @include h2;
     line-height: 32px;
+    letter-spacing: .03em;
   }
   img {
     width: 100%;
