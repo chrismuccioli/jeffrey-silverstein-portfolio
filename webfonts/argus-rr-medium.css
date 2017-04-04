@@ -1,0 +1,27 @@
+/*
+Font: 		ArgusRR Medium
+Style: 		Regular
+URL: 		https://www.youworkforthem.com/font/T2008/argus
+Foundry: 	Red Rooster
+Foundry: 	https://www.youworkforthem.com/designer/261/red-rooster
+Copyright:	Copyright (c) 2013 by International TypeFounders, Inc. All rights reserved.
+Version: 	17
+Created:	March 19, 2015
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'ArgusRR-Medium';
+	src: url('argus-rr-medium.eot');
+	src: url('argus-rr-medium.eot?#iefix') format('embedded-opentype'),
+             url('argus-rr-medium.woff2') format('woff2'),
+	     url('argus-rr-medium.woff') format('woff'),
+	     url('argus-rr-medium.ttf') format('truetype'),
+	     url('argus-rr-medium.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

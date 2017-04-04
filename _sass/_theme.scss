@@ -1,7 +1,7 @@
 @import "variables";
 
-$serif-family: 'Argus-Medium', serif;
-$serif-family-bold: 'Argus-Extra-Bold', serif;
+$serif-family: 'ArgusRR-Medium';
+$serif-family-bold: 'ArgusRR-Extrabold';
 $sans-serif-family: 'Open Sans', sans-serif;
 $sans-cond-family: 'Open Sans Condensed', sans-serif;
 $blue: #DEEEFF;
@@ -12,16 +12,6 @@ $pink: #F7B5E0;
 $gray: #e1d8e4;
 $black: #20003e;
 $space: 10px;
-
-@font-face {
-    font-family: 'Argus-Medium';
-    src: url(https://dl.dropboxusercontent.com/u/329362103/Argus-RR-Medium.otf);
-}
-
-@font-face {
-    font-family: 'Argus-Extra-Bold';
-    src: url(https://dl.dropboxusercontent.com/u/329362103/Argus-RR-ExtraBold.otf);
-}
 
 @mixin serif {
   font-family: $serif-family;
