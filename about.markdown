@@ -5,7 +5,7 @@ permalink: about
 layout: default
 ---
 
-# Jeffrey Silverstein is a writer, musician, and teacher living and working in Brooklyn, NY.
+# Jeffrey Silverstein is a writer, musician, and teacher living and working in Portland, OR.
 
 ![jeff-duo.jpg](/uploads/jeff-portrait.jpg)
 
