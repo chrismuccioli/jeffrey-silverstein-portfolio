@@ -11,4 +11,4 @@ layout: default
 
 ## Originally from the suburbs of NJ, Jeffrey graduated from Towson University where he studied Journalism. Upon moving to New York City, Jeffrey worked as a community manager for MTV before being accepted into the New York City Teaching Fellows program.
 
-## Jeffrey teaches special education at an alternative high school in downtown Brooklyn. He plays guitar and performs under the name Nassau.
+## After teaching in Brooklyn for two years and earning his Master's in Special Education from Hunter College, Jeffrey relocated to Portland, OR. Here he will continue to teach Special Education at a public high school. He plays guitar and records under the name Nassau.
