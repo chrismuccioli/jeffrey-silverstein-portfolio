@@ -1,5 +1,5 @@
 ---
-title: 5 Essential Albums from Bearsville Records
+title: 5 Essential Albums from Bears ville Records
 date: 2019-02-10 21:28:00 -05:00
 categories:
 - Feature
