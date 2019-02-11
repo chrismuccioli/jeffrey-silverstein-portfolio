@@ -7,7 +7,7 @@ layout: default
 
 # Jeffrey Silverstein is a writer, musician, and teacher living and working in Portland, OR.
 
-![jeff-duo.jpg](/uploads/jeff-portrait.jpg)
+![DSC07248.jpg](/uploads/DSC07248.jpg)
 
 ## Originally from the suburbs of NJ, Jeffrey graduated from Towson University where he studied Journalism. Upon moving to New York City, Jeffrey worked as a community manager for MTV before being accepted into the New York City Teaching Fellows program.
 
